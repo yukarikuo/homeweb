@@ -1,0 +1,394 @@
+@charset "UTF-8";
+
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:12px;
+	color:#52483B;
+	letter-spacing:0.1em;
+}
+a:link,
+a:visited {
+	color:#669900;
+	text-decoration:underline;
+}
+a:hover,
+a:active {
+	text-decoration:none;
+}
+a img {
+	border:none;
+}
+
+#wrap {
+	width:880px;
+	margin:0 auto;
+	background:url(../img/bg_contents.png) no-repeat;
+}
+#header {
+	position:relative;
+	width:780px;
+	margin:0 auto;
+	padding-top:90px;
+}
+.copy {
+	margin-bottom:20px;
+	font-size:10px;
+}
+#navi {
+	position:absolute;
+	top:160px;
+	right:28px;
+	list-style-type:none;
+	border-left:1px solid #999999;
+	width: 290px;
+	height: 23px;
+}
+#navi li {
+	height:12px;
+	float:left;
+	border-right:solid 1px #999999;
+	padding:0 10px 4px 10px;
+	vertical-align:bottom;
+	line-height:1.5em;
+}
+#navi li a {
+	color:#52483B;
+	text-decoration:none;
+}
+#navi li a:hover {
+	color:#669900;
+}
+#contents_01 #navi_01 a,
+#contents_02 #navi_02 a,
+#contents_03 #navi_03 a,
+#contents_04 #navi_04 a,
+#contents_05 #navi_05 a {
+	color:#669900;
+	font-weight:bold;
+}
+#slide {
+	position:relative;
+	clear:both;
+	width:810px;
+	height:430px;
+	margin:30px auto;
+	background:url(../img/bg_slide.png) no-repeat;
+}
+#slide_img {
+	width:760px;
+	height:400px;
+	overflow:hidden;
+	padding:15px 0 0 25px;
+}
+#slide_img ul {
+	position:relative;
+	overflow:hidden;
+	list-style-type:none;
+	width:760px;
+	height:400px;
+}
+#slide_img ul li,
+#slide_img ul li img {
+	width:760px;
+	height:400px;
+}
+
+#slide_btn {
+	list-style-type:none;
+}
+#slide_btn_next {
+	position:absolute;
+	top:200px; right:1px;
+}
+#slide_btn_back {
+	position:absolute;
+	top:200px; left:1px;
+}
+#slide_btn_next a,
+#slide_btn_back a {
+	display:block;
+	width:21px;
+	height:0;
+	padding-top:21px;
+	overflow:hidden;
+	background:url(../img/btn_slide.png) no-repeat;
+}
+#slide_btn_next a {
+	background-position:-21px 0;
+}
+#slide_btn_next a:hover {
+	background-position:-21px -21px;
+}
+#slide_btn_back a:hover {
+	background-position:0 -21px;
+}
+#contents {
+	width:780px;
+	margin:0 auto;
+}
+#info {
+	width:280px;
+	margin-bottom:30px;
+	float:left;
+}
+#info h2,
+#pickup h2 {
+	margin-bottom:10px;
+	padding-left:40px;
+	font-size:14px;
+	font-weight:bold;
+	background:url(../img/icon_01.png) no-repeat;
+	background-position:0 7px;
+}
+#info dl {
+	margin-top:14px;
+	padding:0 5px 10px 5px;
+	background:url(../img/bg_info.png) repeat-y;
+}
+#info dt {
+	clear:both;
+	width:70px;
+	padding:10px 20px 0 0;
+	float:left;
+	font-size:10px;
+	font-weight:bold;
+	color:#669900;
+}
+#info dd {
+	width:180px;
+	float:left;
+	line-height:2.5em;
+}
+#pickup {
+	width:482px;
+	margin-bottom:40px;
+	float:right;
+}
+#pickup ul {
+	list-style-type:none;	
+}
+#pickup ul li {
+	width:236px;
+	background:url(../img/pickup_contents.png) repeat-y;
+}
+#pickup ul li .pickup_contents {
+	width:210px;
+	margin:0 auto;
+}
+#pickup ul li h3 {
+	padding:10px 0 7px 0;
+	line-height:1.8em;
+	font-size:12px;
+	font-weight:bold;
+}
+#pickup ul li.pickup_01 {
+	float:left;
+}
+#pickup ul li.pickup_02 {
+	float:right;
+}
+#pickup ul li .text {
+	line-height:1.6em;
+}
+.btn_more {
+	padding:10px 0;
+	text-align:right;
+}
+#footer {
+	clear:both;
+	height:60px;
+	padding:40px 0;
+	background:url(../img/bg_footer.png) top center no-repeat;
+}
+#footer address {
+	font-size:10px;
+	font-style:normal;
+	color:#FFFFFF;
+	text-align:center;
+}
+#title {
+	height:30px;
+	border-bottom:solid 1px #999999;
+	margin-top:35px;
+	padding-bottom:5px;
+}
+#title h2 {
+	width:370px;
+	padding-left:40px;
+	float:left;
+	font-size:16px;
+	font-weight:bold;
+	line-height:1.5em;
+	vertical-align:bottom;
+	background:url(../img/icon_01.png) no-repeat;
+	background-position:0 10px;
+}
+#title .copy {
+	padding-top:5px;
+	float:right;
+	line-height:1.5em;
+	vertical-align:bottom;
+	font-size:12px;
+	text-align:right;
+}
+#news {
+	clear:both;
+	padding-bottom:40px;
+	list-style-type:none;
+}
+#news li {
+	border-bottom:dotted 1px #999999;
+	padding:20px 10px;
+}
+#news h3 {
+	width:500px;
+	margin-bottom:10px;
+	padding-left:15px;
+	float:left;
+	line-height:1.6em;
+	vertical-align:bottom;
+	background:url(../img/icon_02.png) no-repeat;
+	background-position:0 5px;
+	font-size:14px;
+	font-weight:bold;
+}
+#news .date {
+	width:100px;
+	float:right;
+	color:#669900;
+	font-weight:bold;
+	text-align:right;
+}
+#news .text {
+	clear:both;
+	padding:0 15px;
+	line-height:1.6em;
+}
+#concept_text {
+	width:370px;
+	margin-top:30px;
+	padding-left:10px;
+	float:left;
+}
+#concept_text p {
+	line-height:1.8em;
+	margin-bottom:20px;
+}
+#concept_img {
+	width:373px;
+	height:443px;
+	margin:15px 3px 0 0;
+	padding:13px 0 0 13px;
+	float:right;
+	background:url(../img/bg_concept_l.png) no-repeat;
+}
+#concept_photos {
+	clear:both;
+	padding:20px 0;
+	list-style-type:none;
+}
+#concept_photos li {
+	width:174px;
+	height:174px;
+	padding:13px 0 0 13px;
+	float:left;
+	background:url(../img/bg_concept_s.png) no-repeat;
+}
+#concept_photos li.photo {
+	margin-right:10px;	
+}
+#menu {
+	list-style-type:none;
+	padding-bottom:30px;
+}
+#menu li {
+	clear:both;
+	border-bottom:dotted 1px #999999;
+	padding:20px 0;
+}
+.menu_detail {
+	width:460px;
+	float:right;
+}
+.menu_detail h3 {
+	font-size:14px;
+	font-weight:bold;
+	margin:20px 0 10px 0;
+	line-height:1.6em;
+}
+.menu_detail .text {
+	line-height:1.8em;
+}
+.menu_detail .price {
+	margin-top:20px;
+	color:#669900;
+	font-weight:bold;
+}
+.menu_img {
+	width:283px;
+	height:173px;
+	padding:13px 0 0 13px;
+	float:left;
+	background:url(../img/bg_menu.png) no-repeat;
+}
+.menu_img_1 {
+	width:243px;
+	height:173px;
+	padding:13px 0 0 13px;
+	float:left;
+	background:url(../img/bg_menu.png) no-repeat;
+}
+#shop_info {
+	position:relative;
+	clear:both;
+	width:320px;
+	margin-top:30px;
+	float:right;
+	line-height:1.8em;
+}
+#shop_info dt {
+	position:absolute;
+	left:0;
+	clear:both;
+	width:100px;
+	padding:10px 0 10px 5px;
+	float:left;
+	font-size:12px;
+	font-weight:bold;
+	color:#669900;
+}
+#shop_info dd {
+	padding:10px 0 10px 100px;
+	border-bottom:solid 2px #FFFFFF;
+}
+#shop_info_img {
+	width:413px;
+	margin:15px 0 20px 0;
+	float:left;
+	list-style-type:none;
+}
+#shop_info_img li {
+	width:413px;
+	height:293px;
+	margin-bottom:10px;
+	padding:13px 0 0 13px;
+	background:url(../img/bg_shop.png) no-repeat;
+}
+
+/* クリアフィックスハック */
+.clearfix:after { 
+	content:"";
+    display:block;
+    clear:both;
+} 
+.clearfix { 
+	display: inline-block; 
+}
+/* Mac版IE除外 \*/
+.clearfix { 
+	display: block; 
+}
